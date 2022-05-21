@@ -1,0 +1,54 @@
+
+@import 'variables';
+@import 'mixins';
+@import 'header-footer';
+@import 'herosection';
+@import 'videosection';
+@import 'featuresection';
+@import 'reviewsection';
+@import 'modal';
+@import 'mediaquery';
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 300 1.1rem $regular;
+    text-decoration: none;
+    color: $white;
+}
+
+body {
+    background-color: $black;
+}
+
+h1, h2 {
+    font-family: $heading;
+    letter-spacing: .2rem;
+    @include text-fade;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 3rem;
+    padding: 0 10%;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+section {
+@include flex (column, center, "", center);
+}
+
+

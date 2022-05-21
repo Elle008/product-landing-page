@@ -1,0 +1,33 @@
+@import 'variables';
+@import 'mixins';
+@import 'mediaquery';
+
+#features {
+    padding: 5vw 15vw;
+    // @include flex (column, center, "", center);
+
+    .grid-container {
+        margin: 5vw 0;
+        @include grid (3, 1fr);
+    }
+}
+
+.feature {
+    @include flex-column;
+    width: 100%;
+    padding: 2vw;
+    border: 2px solid transparent;
+
+    object {
+        width: 5rem;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+}
+
+:where(.f1, .f2, .f3, .f4, .f5, .f6):hover {
+    @include gradient-border;
+    transform: scale(1.1);
+    transition: transform .4s ease-in-out;
+}

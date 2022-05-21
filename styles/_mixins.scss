@@ -1,0 +1,77 @@
+@mixin three-col-grid {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@mixin two-col-grid {
+    display: grid;
+    justify-items: center;
+    grid-gap: 20%;
+    grid-template-columns: repeat(50% 50%);
+}
+
+@mixin grid ($count, $fraction){
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat($count, $fraction);
+}
+
+@mixin flex ($dir, $justify, $align, $items) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $justify;
+    align-content: $align;
+    align-items: $items;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+@mixin gradient-button {
+    background-image: linear-gradient(60deg, $blue, $purple, $purple, $blue);
+    background-size: 300% 100%;
+    transition: all .4s ease-in-out;
+    border: none;
+
+}
+
+@mixin button-hover {
+    background-position: 100% 0;
+}
+
+@mixin a-gradient {
+    background-image: linear-gradient(150deg, $white, $purple, $blue);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .4s ease-in-out;
+}
+
+@mixin a-hover {
+    font-weight: 700;
+    background-position: 70% 0;
+}
+
+@mixin text-fade {
+    background-image: linear-gradient(60deg, $dark, $white 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin gradient-border {
+    background: linear-gradient(60deg, $black, $black) padding-box,
+    linear-gradient(150deg, $purple 30%, $blue, $black) border-box;
+    border: 2px solid transparent;
+}

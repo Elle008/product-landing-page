@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles/styles.css">
+		<script src="./script.js" defer></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<header id="header">
+
+			<img src="./images/logo.png" alt="oculus logo" id="header-img" class="logo" />
+
+			<nav id="nav-bar">
+				<a class="nav-link" href="#product-section">Oculus Rift</a>
+				<a class="nav-link" href="#features">Experiences</a>
+				<a class="nav-link" href="#reviews">Reviews</a>
+			</nav>
+
+			<!-- <nav id="hamburger-menu">
+				<div id="menuToggle">
+	
+				  <input type="checkbox" />
+				  <span></span>
+				  <span></span>
+				  <span></span>
+	
+				  <ul id="menu">
+					<a href="#"><li>Product</li></a>
+					<a href="#"><li>Reviews</li></a>
+					<a href="#"><li>Contact</li></a>
+					<a href="#"><li>Buy Now</li></a>
+				  </ul>
+				</div>
+			</nav> -->
+
+			<a id="header-cta" class="cta" href="#">Buy Now</a>
+
+		</header>
+
+		<main>
+			<section id="hero-section" class="two-col">
+
+				<div id="usp" class="content-wrapper">
+					<h1>
+						Do Just About Anything
+					</h1>
+		
+					<h3>
+						With Anyone From Anywhere
+					</h3>
+		
+					<a href="#"><button class="cta">Buy Now - 30% Off</button></a>
+				</div>
+		
+				<div class="img-wrapper">
+					<img src="./images/hero-copy.png" alt="man wearing vr headset" />
+				</div>
+		
+			</section>
+
+			<section id="product-section">
+				<h2>
+					Step into virtual reality and discover new worlds
+				</h2>
+
+				<div class="video-player">
+					<video class="video"
+						src="./images/commercial.mp4"
+						poster="./images/video-thumbnail.jpg"
+						controls>
+					</video>
+				</div>
+
+				<div id="product">
+					<h3>Introducing
+					<span id="product-name">Oculus Rift S</span>
+					</h3>
+
+					<img #id="product-img" src="./images/product.png" alt="vr headset package"/>
+					<p>
+						Hundreds of hit games, 
+						one-of-a-kind experiences 
+						and a growing community awaits you
+					</p>
+
+					<a href="#"><button class="cta">Learn More</button></a>
+				</div>
+			</section>
+
+			<section id="features">
+				<h2>
+					Explore VR Expriences
+				</h2>
+
+				<div class="grid-container">
+
+					<div class="feature f1">
+						<object data="./images/1.svg"></object>
+						<p>VR for Social</p>
+					</div>
+
+					<div class="feature f2">
+						<object data="./images/2.svg"></object>
+						<p>VR for Games</p>
+					</div>
+
+					<div class="feature f3">
+						<object data="./images/3.svg"></object>
+						<p>VR for Education</p>
+					</div>
+
+					<div class="feature f4">
+						<object data="./images/4.svg"></object>
+						<p>VR for Entertainment</p>
+					</div>
+
+					<div class="feature f5">
+						<object data="./images/5.svg"></object>
+						<p>VR for Business</p>
+					</div>
+
+					<div class="feature f6">
+						<object data="./images/6.svg"></object>
+						<p>VR for Fitness</p>
+					</div>
+
+				</div>
+			</section>
+
+			<section id="reviews" class="two-col">
+
+				<div class="img-wrapper">
+
+					<img src="./images/rev-img.png" alt=" two people wearing vr headset">
+
+				</div>
+
+				<div class="content-wrapper">
+
+					<h2>
+						What our users say
+					</h2>
+
+					<img class="quote"  src="./images/quote.png" alt="quotation mark">
+
+					<div class='testimonial-wrapper'>
+							
+							<span class="testimonial 1">
+								Truly a crazy experience to be in a virtual world. 
+								You actually forget that what you see isn't actually real.
+							</span>
+
+						
+							<span class="testimonial 2">
+								I expected this to be good but not this amazing!! 
+								The app Wander has taken me to beautiful places I wish I could visit. 
+								You feel as if you are just flying.
+							</span>
+
+							<span class="testimonial 3">
+								Absolutely the best purchase all year! It's a real “gaming monster”.
+								I would say VR technology is really something that every gamer should try. 
+							</span>
+						
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="modal-section">
+				<div id="modal">
+					<h3>Subscribe To Our Newsletter To</h3>
+					<h2>Enjoy exclusive deals</h3>
+
+					<form action="./thankyou.html" id="form">
+					<input type="text" name="email" placeholder="Email Address" id="email">
+					<input type="submit" value="Subscribe" id="submit">
+					<p class="close">no thanks</p>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div>
+				<img src="./images/logo2.png" alt="logo" class="logo">
+				<p>New World Awaits</p>
+				<p>© 2022 Oculus | All Rights Reserved</p>
+			</div>
+
+			<div>
+				<p>123 New St.,<br>New York, NY 00000</p>
+				<p>hello@oculus.com</p>
+
+			</div>
+		</footer>
+	</body>
+</html>

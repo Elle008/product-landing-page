@@ -1,0 +1,77 @@
+@import 'variables';
+@import 'mixins';
+@import 'mediaquery';
+
+// header
+
+header, footer {
+    width: 100%;
+    @include flex (row, space-between, center, center);
+    padding: 5vh 5vw;
+}
+
+header {
+    position: s-webkit-sticky;
+    top: 0;
+    z-index: 1;
+}
+
+// .sticky {
+//     border: 2px solid red;
+//     position: fixed;
+//     top: 0;
+//     z-index: 1;
+//     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+// }
+
+.logo {
+    width: 6vw;
+}
+
+nav {
+    .nav-link {
+        padding: 0 3vw;
+        @include a-gradient;
+    }
+
+    :hover {
+        @include a-hover;
+    }
+}
+
+.cta {
+    padding: 1vh 2.5vw;
+    border-radius: 50px;
+    @include gradient-button;
+
+        &:hover {
+            @include button-hover;
+        }
+}
+
+#header-cta {
+    justify-self: end;
+}
+
+// footer
+
+footer {
+    background-color: $dark;
+    
+
+    div {
+        justify-content: flex-start;
+        text-align: left;
+    }
+    .logo {
+        width: 10vw;
+    }
+
+    p {
+        text-align: left;
+        padding: 0;
+        font-size: 1rem;
+        color: grey;
+    }
+}
+

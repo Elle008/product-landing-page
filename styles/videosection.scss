@@ -1,0 +1,59 @@
+@import 'variables';
+@import 'mixins';
+@import 'mediaquery';
+
+#product-section {
+    width: 100%;
+    // margin: -5px auto 0 auto;
+    padding: 5vw 15vw;
+    background-color: $dark;
+    // @include flex (column, center, "", center);
+}
+
+
+.video-player {
+    width: 100%;
+    padding: 5vw 0;
+
+        .video {
+            width: 100%;
+        }
+
+        .play-button, .pause-button {
+            color: black;
+        }    
+
+        .pause-button {
+            display: none;
+        }
+}
+
+#product {
+    @include flex-column;
+
+    #product-name {
+        font-size: 2rem;
+        @include a-gradient;
+        font-weight: 600;
+    }
+
+    img {
+            width: 80%;
+        }
+
+    p {
+        width: 65%;
+    }
+
+    .cta {
+        font-size: 1.5rem;
+        padding: 1.5vh 4vw;
+        margin: 20px 0 40px 0;
+        @include gradient-button;
+
+        :hover {
+            @include button-hover;
+        }
+    }
+
+}

@@ -1,0 +1,67 @@
+@import 'variables';
+@import 'mixins';
+@import 'mediaquery';
+
+#modal-section {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.883);
+    position: fixed;
+    top: 0;
+    display: none;
+    transition: all .4s ease-in-out;
+}
+
+#modal {
+    width: 50vw;
+    padding: 2% 5%;
+    text-align: center;
+    background-color: $black;
+    position: fixed;
+    top: 30vh;
+    left: 25vw;
+    border-radius: 20px;
+    
+
+    h3 {
+        font-size: 1.5rem;
+        @include text-fade;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        font-family: $regular;
+        font-weight: 700;
+    }
+}
+
+form {
+    padding-top: 3%;
+
+        input {
+            padding: 1% 2%;
+        }
+        
+        input[type=text] {
+            width: 70%;
+            @include gradient-border;
+        }
+
+        input[type=submit] {
+            @include gradient-button;
+        }
+
+        input:hover {
+                @include button-hover;
+            }
+
+
+        p {
+            font-size: 1rem;
+            color: #696767;
+            text-decoration: underline;
+            padding-top: 5%;
+            cursor: pointer;
+        }
+}
+

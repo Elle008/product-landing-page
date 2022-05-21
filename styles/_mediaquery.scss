@@ -1,0 +1,99 @@
+@import 'mixins';
+
+// toggle menu
+
+@media (min-width: 769px) {
+    #hamburger-menu {
+        display:none;
+    }
+}
+
+@media (max-width: 768px) {
+    #nav-bar, #header-cta {
+        display: none;
+    }
+
+    header .logo {
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 15px;
+    }
+
+    #product-section {
+        padding: 5vw;
+
+        p {
+            width: 80%;
+        }
+    }
+
+    #reviews {
+        flex-direction: column;
+        padding: 2vh 2vw 35vw 2vw;
+        
+        div {
+            width: 100%;
+        }
+
+        h2 {
+            padding-bottom: 0;
+        }
+
+        .testimonial {
+            padding: 0 8vw;
+        }
+    }
+}
+
+@media (max-width: 863px) {
+    #usp h1 {
+        font-size: 3.5rem;
+    }
+
+    #features .grid-container {
+        @include grid (2, 1fr)
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    .two-col {
+        flex-direction: column;
+        padding: 2vh 2vw 0 2vw;
+        
+        div {
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        #hero-img img {
+            width: 100%;
+            visibility: visible;
+        }
+
+        #reviews {
+            .quote {
+                width: 15vw;
+            }
+        }
+    
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+
+    #usp .cta {
+        font-size: 2rem;
+    }
+}
